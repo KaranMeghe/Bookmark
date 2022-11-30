@@ -11,7 +11,50 @@
     <title>Bookmark Website</title>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body>
-    <h1 class="text-4xl text-red-700">Tailwind css</h1>
+  <body class="overflow-x-hidden">
+    <!-- Nav section -->
+   <nav class="container relative mx-auto p-6">
+    <!-- Flex Container for Nav Items -->
+    <div class="flex items-center justify-between space-x-20 my-6">
+      <!-- Logo -->
+      <div class="z-30">
+        <img src="./images/logo-bookmark.svg" alt="Brand Logo" class="src" id="logo">
+      </div>
+
+      <!-- Menu items -->
+      <div class="hidden items-center space-x-10 uppercase text-grayishBlue md:flex">
+        <a href="#features" class="tracking-widest hover:text-softRed">Features</a>
+        <a href="#download" class="tracking-widest hover:text-softRed">Download</a>
+        <a href="#faq" class="tracking-widest hover:text-softRed">Faq</a>
+        <a href="#login" class="px-8 py-2 bg-softRed text-white shadow-md rounded-lg tracking-widest  border-softRed border-2 hover:text-softRed hover:bg-white transition-all">Login</a>
+      </div>
+    </div>
+   </nav>
+
+   <!-- Hero section -->
+   <section id="hero">
+    <!-- Container for image and content -->
+    <div class="container flex flex-col-reverse mx-auto p-6 lg:flex-row lg:mb-0">
+      <!-- Content -->
+      <div class="flex flex-col space-y-10 lg:mt-16 lg:w-1/2">
+        <h1 class="text-3xl font-semibold text-center lg:text-6xl lg:text-left">A simple Bookmark Manager</h1>
+
+        <p class="max-w-md mx-auto text-lg text-center text-gray-400 lg:text-2xl lg:text-left lg:mx-0 lg:mt-0">A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+
+        <!-- Buttons container -->
+        <div class="flex items-center justify-center w-full space-x-4 lg:justify-start transition-all">
+          <a href="" class="p-4 font-semibold bg-softBlue text-white rounded-md shadow-md border-softBlue border-2 md:text-base hover:text-softBlue hover:bg-white">Get it on Chrome </a>
+
+          <a href="" class="p-4 font-semibold bg-gray-300 text-black rounded-md shadow-md  border-2 md:text-base hover:text-gray-600 hover:bg-white">Get it on Firefox </a>
+        </div>
+      </div>
+
+      <!-- Image container -->
+      <div class="realtive mx-auto lg:mx-0 lg:mb-0 lg:w-1/2">
+        <div class="bg-hero"></div>
+        <img src="./images/illustration-hero.svg" alt="" class="relative z-10 lg:top-24 xl:top-0 overflow-x-visible">
+       </div>
+    </div>
+  </section>
   </body>
 </html>
