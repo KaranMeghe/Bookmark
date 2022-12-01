@@ -2,12 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-@media (min-width: 1020px){
+@media screen(lg){
 .bg-hero{
     width: 2000px;
     height: 300px;
-    left: 60%;
+    left: 62%;
 
-    @apply absolute rounded-l-full top-[42%] bg-softBlue;
+    @apply absolute rounded-l-full top-[38%] bg-softBlue;
 }
 }
