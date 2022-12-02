@@ -16,6 +16,8 @@ e.target.classList.add('border-softRed', 'border-b-4');
 
 const classString = e.target.getAttribute('data-target');
 document.getElementById('panels').getElementsByClassName(classString)[0].classList.remove('hidden');
+
+console.log(document.getElementById('panels').getElementsByClassName(classString)[0]);
 }
 
 // tabs menu event listner
